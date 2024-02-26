@@ -1,7 +1,7 @@
 import { IsEmail, Length, IsInt, Min, Max } from "class-validator";
 
 // import type { IPerson } from "./Person.types";
-import type { IPerson } from "../app/domain/person/Person.types";
+import type { IPerson } from "./Person.types";
 
 export class CreatePerson implements Omit<IPerson, "id"> {
   @Length(2, 20)
